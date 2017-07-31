@@ -1,0 +1,24 @@
+connect:
+  address: 192.168.1.2:5091
+  credentials:
+    username: proxy
+    password: myP@ssw0rd
+proxy:
+  bind: :25565
+  routes:
+  - domain: ""
+    server: story
+    icon: icon.png
+    motds:
+    - My message of the day
+    - Another MOTD for testing
+  locale:
+    full: The server seems to be currently full. Try again later!
+    offline: The requested server is currently offline. Try again later!
+    loggedIn: You seem to be logged in already. Try again later!
+    lostConn: Lost connection... Please try to reconnect
+    shutdown: The server is being restarted. Please try to reconnect
+  motd: A LilyPad Server
+  maxPlayers: 10
+  syncMaxPlayers: false
+  authenticate: true

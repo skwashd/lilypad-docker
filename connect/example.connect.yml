@@ -1,0 +1,4 @@
+bind: :5091
+logins:
+- regexp: ^.*$
+  password: changeme
