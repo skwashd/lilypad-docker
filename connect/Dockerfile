@@ -21,6 +21,9 @@ FROM scratch
 MAINTAINER Dave Hall <skwashd@gmail.com>
 
 COPY --from=build /tmp/lilypad-connect /
+COPY ./passwd /etc/passwd
+
+USER nobody
 
 EXPOSE 5091
 WORKDIR /data
